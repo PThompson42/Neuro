@@ -1,0 +1,183 @@
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.action-button {
+    background-color: #00000000;
+    border-radius: 8px;
+    color: white;
+    border-width: 0.5px;
+    border-color: #474d56;
+}
+.action-button:hover {
+    font-weight: bold;
+    box-shadow: 7px 6px 8px #606060;
+}
+.action-button:active {
+    transform: translateY(3px);
+}
+.spin-button {
+    background-color: #474d56;
+    color: white;
+}
+.spin-button:hover {
+    background-color: #fdd2b8;
+    color: black;
+    font-weight: bold;
+}
+.spin-button:active {
+    transform: translateY(3px);
+}
+.toggleon {
+    background-color: #FFFFFF20;
+    border-radius: 8px;
+    color: lightgreen;
+    box-shadow: 7px 6px 8px #808080;
+}
+.toggleon:hover {
+    box-shadow: 7px 6px 8px #808080;
+    font-weight: bold;
+}
+.toggleon:active {
+    transform: translateY(3px);
+}
+.toggleoff {
+    background-color: #00000000;
+    border-radius: 8px;
+    color: white;
+    border-width: 0.5px;
+    border-color: #474d56;
+}
+.toggleoff:hover {
+    font-weight: bold;
+    box-shadow: 7px 6px 8px #606060;
+}
+.toggleoff:active {
+    transform: translateY(3px);
+}
+/* -----------------------------------
+//      Loading Items
+---------------------------------------*/
+#LoadingDiv {
+    padding: 0;
+    position: absolute;
+    border-radius: 18px;
+    top: 5%;
+    left: 5%;
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+    background-color: #404040;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #303030;
+    box-shadow: 7px 10px 8px #202020;
+}
+#bar {
+    position: absolute;
+    top: 60px;
+    height: 18px;
+    width: 500px;
+    left: 50px;
+    background: #ffffff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#circle {
+    position: absolute;
+    top: -30px;
+    margin-left: -30px;
+    height: 60px;
+    width: 10px;
+    left: 0;
+    background: #202020;
+    -webkit-animation: mymove 1s infinite
+}
+#pLoad {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0px;
+    width: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+#msg1{
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 600px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+#loadmessage{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 600px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    color: #a0a0a0;
+}
+#loadpct{
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 600px;
+    text-align: center;
+    font-family: arial, sans-serif;
+    font-size: 36px;
+    color: #a0a0a0;
+}
+@keyframes mymove {
+    0% {
+        left: 0;
+        width: 10px;
+    }
+    50% {
+        left: 45%;
+        width: 110px;
+    }
+    100% {
+        left: 110%;
+        width: 10px;
+    }
+}
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #00529c;
+    border-color: #808080 transparent #404040 transparent;
+    animation: lds-hourglass 1.2s infinite;
+  }
+@keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
